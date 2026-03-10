@@ -6,9 +6,9 @@ super("Inicio");
 }
 
 preload(){
-this.load.image("fondoInicio","../img/fondo.jpg");
-this.load.image("fondoInicio2","../img/fondo2.webp");
-this.load.image("boton","../img/boton.png");
+this.load.image("fondoInicio","fondo.jpg");
+this.load.image("fondoInicio2","fondo2.webp");
+this.load.image("boton","boton.png");
 }
 
 create(){//se guardo el bloque de la escena inicial para cargar un fondo y el boton del codigo original
@@ -50,12 +50,12 @@ preload(){
 
     let fondo = this.add.image(450,300,"fondoInicio2");
 fondo.setDisplaySize(900,600);//un segundo escenario para que combinara con las imagenes del juego
-this.load.image("raspado","../img/rascar.png");
+this.load.image("raspado","rascar.png");
 
-this.load.image("agua","../img/agua.png");
-this.load.image("casa","../img/casa.png");
-this.load.image("lata","../img/lata.png");
-this.load.image("fogata","../img/fogata.png");
+this.load.image("agua","agua.png");
+this.load.image("casa","casa.png");
+this.load.image("lata","lata.png");
+this.load.image("fogata","fogata.png");
 
 }
 
@@ -271,3 +271,4 @@ scene:[Inicio,Juego]
 };
 
 const game = new Phaser.Game(config);
+
